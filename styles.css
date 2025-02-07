@@ -1,0 +1,63 @@
+/* styles.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font mai modern */
+  background: #e0f7fa; /* Un fundal mai plăcut */
+  color: #333; /* Text mai închis pentru contrast */
+}
+#container {
+  text-align: center;
+  max-width: 650px; /* Lățime puțin mai mare */
+  padding: 30px; /* Padding mai mare */
+  background: #fff;
+  border-radius: 12px; /* Borduri mai rotunjite */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Umbră mai pronunțată */
+}
+h2 {
+  color: #00bcd4; /* Culoare accent pentru titlu */
+  margin-bottom: 20px;
+}
+.buttons-container { /* Container pentru butoane pentru a le grupa */
+  display: flex;
+  flex-wrap: wrap; /* Permite butoanelor să se încadreze pe rânduri multiple */
+  justify-content: center; /* Centrează butoanele */
+  margin-bottom: 20px;
+}
+button {
+  font-size: 1em;
+  padding: 12px 24px; /* Butoane puțin mai mari */
+  margin: 8px; /* Spațiere mai mică între butoane */
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #00bcd4; /* Culoare principală pentru butoane */
+  color: white;
+  transition: background-color 0.3s ease; /* Efect de tranziție hover */
+}
+button:hover:enabled {
+  background-color: #00acc1; /* Culoare hover mai închisă */
+}
+button:disabled {
+  opacity: 0.6; /* Opacitate mai mare pentru butoanele dezactivate */
+  cursor: not-allowed; /* Cursor indică că nu se poate da click */
+}
+#status, #sensorData {
+  margin-top: 20px;
+  text-align: left;
+  background: #f5f5f5; /* Fundal mai deschis pentru zonele de date */
+  padding: 15px; /* Padding mai mare */
+  border-radius: 8px;
+  min-height: 100px;
+  overflow-y: auto;
+  font-family: monospace;
+  white-space: pre-wrap;
+  border: 1px solid #ddd; /* Bordură subtilă */
+}
+#status {
+  background-color: #e8f5e9; /* Fundal verde deschis pentru zona de status */
+  border-color: #c8e6c9;
+}
