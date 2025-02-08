@@ -267,7 +267,7 @@ Getting analysis from Gemini API...`;
   const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
   // Construct the prompt.
-  const prompt = `Analiză scurtă (NU UTILIZA MULT SPATII FOARTE SUCCINT SI NU UITA DE ANALIZA DE METALE SI COMPOZITIE NU SCHIMBA TEMELE NU FA NIMI INAFARA DE ANALIZA ) și structurată a datelor spectroscopice pentru sol marin de la fundul oceanului (submarin) si compozitia solului. Interpretează concis fiecare parametru.
+  const prompt = `Analiză scurtă ,!!IMPORTAN!! nu uita că datele primite sunt dela un senzor depe drona de cercetare a fundului oceanului și datele pot fi un pic deviate,încercă să le recuperezi(NU UTILIZA MULT SPATII FOARTE SUCCINT SI NU UITA DE ANALIZA DE METALE SI COMPOZITIE NU SCHIMBA TEMELE NU FA NIMI INAFARA DE ANALIZA ) și structurată a datelor spectroscopice pentru sol marin de la fundul oceanului (submarin) si compozitia solului. Interpretează concis fiecare parametru.
 
 **Nuanță (Hue):** Interpretare scurtă pentru sol marin.
 **Saturație (Saturation):** Interpretare scurtă pentru sol marin.

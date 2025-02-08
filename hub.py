@@ -25,13 +25,14 @@ if sensor: # Proceed only if sensor initialization was successful
     keyboard.register(stdin)
 
     while True:
+        sensor.lights.on(100)
         # Signal readiness to receive command
         stdout.buffer.write(b"rdy")
         stdout.flush()
         # Check for incoming data without blocking
         while not keyboard.poll(0):
             wait(10) # Wait briefly if no input
-
+        
         # Read up to 5 bytes from input buffer (length of "prunus")
         cmd = stdin.buffer.read(6)
 
@@ -52,6 +53,7 @@ if sensor: # Proceed only if sensor initialization was successful
            
             print(f"NaVi{hue},{saturation},{value},{reflection_value},{ambient_light}\n") # Encode string to bytes for stdout
              # Ensure data is sent immediately
+            
 
 
         elif cmd == b"bye   ": # Add a 'bye' command to exit gracefully
